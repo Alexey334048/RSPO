@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main Menu</title>
+    <link rel="stylesheet" href="/menu.css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet" type="text/css">
+    <style>
+        .close-btn {
+            font-size: 30px;
+            color: #FBF0E4;
+            text-decoration: none;
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <a href="#" class="close-btn" onclick="goBack()">&#10006;</a>
+    <!-- Крестик -->
+
+    <div class="menu">
+        <h2>МЕНЮ</h2>
+        <ul>
+            <li><a href="contacts.html">Контакты</a></li>
+            <li><a href="house.php">Дом</a></li>
+            <li><a href="bathhouse.html">Баня</a></li>
+            <li><a href="entertainment.html">Развлечения</a></li>
+            <li><a href="restaurant.html">Ресторан</a></li>
+            <li><a href="transfer.html">Трансфер</a></li>
+            <li><a href="CancelBooking.php">Отмена брони</a></li>
+        </ul>
+    </div>
+
+    <script>
+        function goBack() {
+            if (document.referrer) {
+                window.history.back(); // Возвращаемся на предыдущую страницу
+            } else {
+                window.location.href = 'index.php'; // Если истории нет, переходим на главную
+            }
+        }
+    </script>
+</body>
+
+</html>

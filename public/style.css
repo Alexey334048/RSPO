@@ -1,0 +1,443 @@
+* {
+    font-family: Nunito, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    line-height: 1.5;
+    transition: all .7s;
+}
+
+:root {
+    --orange: #FFDAB2;
+}
+
+*::selection {
+    background-color: var(--orange);
+    color: #fff;
+}
+
+.heading {
+    font-size: 4rem;
+    color: #FFDAB2;
+    text-align: center;
+    padding: 1rem;
+    padding-top: 3rem;
+    font-weight: 100;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+header {
+    /* width: 100%; */
+    background-color: #3D3D3D;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 8%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    box-shadow: 0 .1rem .3rem rgb(0, 0, 0, .3);
+}
+
+header .logo {
+    font-size: 2rem;
+    color: #FFDAB2;
+}
+
+header .fa-bars {
+    font-size: 3rem;
+    color: #FBF0E4;
+    cursor: pointer;
+    display: none;
+}
+
+
+/* home section */
+
+.home {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(/img/home5.jpg) no-repeat center/cover;
+}
+
+.home .content {
+    text-align: center;
+    padding: 1rem;
+}
+
+.home .content h1 {
+    font-size: 5rem;
+    font-weight: 100;
+    color: #FFDAB2;
+}
+
+.home .content h2 {
+    font-size: 3rem;
+    font-weight: 100;
+    color: #FBF0E4;
+}
+
+.home .content h3 {
+    font-size: 3rem;
+    font-weight: 100;
+    color: #FBF0E4;
+}
+
+
+/* our house */
+
+.primary-btn {
+    color: #FFDAB2;
+    font-size: 2rem;
+}
+
+.heade {
+    font-size: 2rem;
+    color: #FBF0E4;
+    text-align: center;
+    font-weight: 100;
+}
+
+.row {
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+}
+
+.hp-room-section button {
+    background-color: #3D3D3D;
+    border-radius: 10%;
+    color: #FFDAB2;
+    width: 200px;
+    height: 50px;
+    margin-left: 70px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.hp-room-section {
+    background-color: #1E1E1E;
+}
+
+.hp-room-items .hp-room-item {
+    width: 400px;
+    height: 600px;
+    margin: 5px;
+    margin-top: 25px;
+    position: relative;
+    overflow: hidden;
+}
+
+.hp-room-items .hp-room-item:hover .hr-text {
+    bottom: 50px;
+}
+
+.hp-room-items .hp-room-item:hover .hr-text h2 {
+    margin-bottom: 30px;
+}
+
+.hp-room-items .hp-room-item .hr-text {
+    position: absolute;
+    left: 45px;
+    right: 25px;
+    bottom: -250px;
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+.hp-room-items .hp-room-item .hr-text h3 {
+    color: #FBF0E4;
+    margin-bottom: 15px;
+}
+
+.hp-room-items .hp-room-item .hr-text h2 {
+    color: #FFDAB2;
+    font-weight: 700;
+    margin-bottom: 50px;
+    -webkit-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    transition: all 0.2s;
+}
+
+.hp-room-items .hp-room-item .hr-text h2 span {
+    font-family: "Cabin", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #FBF0E4;
+}
+
+.hp-room-items .hp-room-item .hr-text table {
+    margin-bottom: 30px;
+}
+
+.hp-room-items .hp-room-item .hr-text table tbody tr td {
+    font-size: 16px;
+    color: #FBF0E4;
+    line-height: 36px;
+}
+
+.hp-room-items .hp-room-item .hr-text table tbody tr td.r-o {
+    width: 120px;
+}
+
+.hp-room-items .hp-room-item .hr-text .primary-btn:after {
+    background: #FBF0E4;
+}
+
+
+/* Description of houses */
+
+.cont {
+    background-color: #3D3D3D;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 350px);
+    gap: 10px;
+}
+
+.image {
+    width: 70%;
+    height: auto;
+    border: 2px solid transparent;
+    border-radius: 5px;
+}
+
+.image.highlighted {
+    border-color: rgb(8, 8, 11);
+}
+
+.text-content {
+    max-width: 400px;
+}
+
+.cont .heading {
+    font-size: 4rem;
+    color: #FFDAB2;
+    text-align: left;
+    padding: 3rem;
+    padding-top: 3rem;
+    padding-bottom: 7rem;
+    font-weight: 300;
+}
+
+
+/* Description of houses end*/
+
+.con {
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #1E1E1E;
+}
+
+.cont2 {
+    text-align: center;
+}
+
+.cont2 .gallery2 {
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.cont2 .image {
+    width: 300px;
+    height: 500px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.cont2 .image img {
+    width: 85%;
+    height: auto;
+    object-fit: cover;
+    border: 2px solid #333;
+}
+
+
+/* footer */
+
+footer {
+    background-color: #3D3D3D;
+    padding: 20px 0;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    color: #FBF0E4;
+}
+
+.brand,
+.contacts {
+    margin: 20px;
+    text-align: left;
+}
+
+.links {
+    margin: 10px;
+    text-align: right;
+}
+
+.brand h2 {
+    color: #FFDAB2;
+    font-size: 20px;
+    margin-bottom: 5px;
+    font-weight: 100;
+}
+
+.brand p {
+    font-size: 10px;
+}
+
+.contacts p strong {
+    color: #FFDAB2;
+    font-weight: 100;
+}
+
+.contacts p,
+.links a {
+    font-size: 14px;
+    color: #FBF0E4;
+    text-decoration: none;
+}
+
+.social-icons .icon-btn {
+    background-color: #FFDAB2;
+    width: 30px;
+    height: 30px;
+    margin: 0 5px;
+    border: none;
+    border-radius: 60%;
+}
+
+.links a {
+    display: block;
+    margin: 5px 0;
+    color: #FBF0E4;
+}
+
+.links a:hover {
+    color: #ffffff;
+}
+
+
+/*//////////////////////////*/
+
+.contant1 {
+    background-color: #3D3D3D;
+    padding: 20px;
+    text-align: center;
+}
+
+.conditions {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+.condition {
+    background-color: #FBF0E4;
+    padding: 20px;
+    border-radius: 8px;
+    color: #1E1E1E;
+}
+
+.condition p {
+    font-size: 15px;
+}
+
+.condition h2 {
+    font-size: 18px;
+    color: #1E1E1E;
+    margin-bottom: 19px;
+}
+
+.amenities {
+    background-color: #1E1E1E;
+    padding: 30px;
+    border-radius: 8px;
+}
+
+.icons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin-bottom: 20px;
+    margin-top: 40px;
+}
+
+.icon {
+    text-align: center;
+}
+
+.icon img {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 10px;
+}
+
+.icon p {
+    font-size: 15px;
+    color: #FBF0E4;
+}
+
+.additional {
+    font-size: 14px;
+    color: #FBF0E4;
+}
+
+
+/* media queries */
+
+@media (max-width: 50000px) {
+    html {
+        font-size: 55%;
+    }
+    header .fa-bars {
+        display: block;
+    }
+}
+
+
+/* media our house */
+
+@media only screen and (min-width: 450px) {
+    .ourhouse .product-wrapper {
+        width: 50%;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .ourhouse .product-wrapper {
+        width: 33.333%;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    .ourhouse .product-wrapper {
+        width: 25%;
+    }
+}

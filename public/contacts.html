@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacts</title>
+    <link rel="stylesheet" href="/contacts.css">
+    <link rel="menu" href="/menu.html">
+    <!-- fontawesone link -->
+    <script src="https://kit.fontawesome.com/467b90b200.js" crossorigin="anonymous"></script>
+    <!-- font link -->
+    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet" type="text/css">
+</head>
+
+<script>
+    function shareToSocial(platform) {
+        const pageUrl = encodeURIComponent(window.location.href);
+        const pageTitle = encodeURIComponent(document.title);
+
+        let shareUrl = '';
+
+        switch (platform) {
+            case 'facebook':
+                shareUrl = `https://www.facebook.com/sharer/sharer.php?u=${pageUrl}`;
+                break;
+            case 'telegram':
+                shareUrl = `https://t.me/share/url?url=${pageUrl}&text=${pageTitle}`;
+                break;
+            case 'whatsapp':
+                shareUrl = `https://api.whatsapp.com/send?text=${pageTitle} - ${pageUrl}`;
+                break;
+            case 'twitter':
+                shareUrl = `https://twitter.com/intent/tweet?url=${pageUrl}&text=${pageTitle}`;
+                break;
+            default:
+                alert('Платформа не поддерживается.');
+                return;
+        }
+
+        window.open(shareUrl, '_blank');
+    }
+</script>
+
+<body>
+    <!-- header section start -->
+    <header>
+        <a href="/index.php" class="logo"><span>DREAM COME TRUE</span></a>
+        <a href="/menu.html" class="fas fa-bars"></a>
+        </div>
+
+    </header>
+    <!-- header section end -->
+
+    <!-- contacts start -->
+    <div class="container">
+        <h1>КОНТАКТЫ</h1>
+        <div class="contact-info">
+            <div class="info-block">
+                <p><strong>Телефон:</strong></p>
+                <p>+375 (29) 123-53-53</p>
+                <p>+375 (29) 133-53-53</p>
+            </div>
+            <div class="info-block">
+                <p><strong>Адрес:</strong></p>
+                <p>Минская область, Воложенский район, село Васильевское, территория "Dream come true"</p>
+            </div>
+            <div class="info-block">
+                <p><strong>E-mail:</strong></p>
+                <p><a href="#">hello@Dream_come_true.by</a></p>
+            </div>
+        </div>
+
+        <div class="share-buttons">
+            <button class="icon-btn" onclick="shareToSocial('facebook')">
+                <i class="fa-brands fa-facebook"></i>
+            </button>
+            <button class="icon-btn" onclick="shareToSocial('telegram')">
+                <i class="fa-brands fa-telegram"></i> 
+            </button>
+            <button class="icon-btn" onclick="shareToSocial('whatsapp')">
+                <i class="fa-brands fa-whatsapp"></i>
+            </button>
+            <button class="icon-btn" onclick="shareToSocial('twitter')">
+                <i class="fa-brands fa-x-twitter"></i> 
+            </button>
+        </div>
+
+        <div class="map-section">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2349.7746214034973!2d27.43306651134929!3d53.91798077234565!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46dbc4d22502671b%3A0xff8360c6e30414a5!2z0YPQu9C40YbQsCDQmtC-0LvQtdGB0L3QuNC60L7QstCwIDMsINCc0LjQvdGB0LosINCc0LjQvdGB0LrQsNGPINC-0LHQu9Cw0YHRgtGMIDIyMDAxNw!5e0!3m2!1sru!2sby!4v1729795104226!5m2!1sru!2sby"
+                width="900" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+    <!-- contacts end -->
+
+    <!-- footer start -->
+    <footer>
+        <div class="footer-content">
+            <div class="brand">
+                <h2>DREAM COME TRUE</h2>
+                <p>АРЕНДА КРАСИВЫХ ДОМОВ НА ОЗЕРЕ</p>
+            </div>
+            <div class="contacts">
+                <p><strong>КОНТАКТЫ</strong></p>
+                <p>Минская область, Воложенский район, село Васильевское,<br> территория "Dream come true"</p>
+                <p>+375 (29) 123-53-53</p>
+                <p>hello@dream_come_true.ru</p>
+                <div class="social-icons">
+                    <button class="icon-btn"><i class="fab fa-youtube"></i></button>
+                    <button class="icon-btn"><i class="fab fa-telegram"></i></button>
+                    <button class="icon-btn"><i class="fab fa-whatsapp"></i></button>
+                </div>
+            </div>
+            <div class="links">
+                <a href="#">Публичная оферта</a>
+                <a href="#">Политика конфиденциальности</a>
+                <a href="#">Условия бронирования, оплаты и аннулирования</a>
+                <a href="#">Пользовательское соглашение</a>
+                <a href="#">Правила пожарной безопасности</a>
+                <a href="#">Правила проживания</a>
+            </div>
+        </div>
+    </footer>
+    <!-- footer end -->
+
+</body>
+<style>
+    .share-buttons {
+        margin: 10px 0;
+        display: flex;
+        gap: 5px;
+    }
+    
+    .share-buttons .icon-btn {
+        padding: 10px 15px;
+        background-color: #FFDAB2;
+        color: #FBF0E4;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        align-items: center;
+        gap: 5px;
+        font-size: 14px;
+        transition: background-color 0.3s ease;
+    }
+    
+    .share-buttons .icon-btn i {
+        color: #000;
+        font-size: 16px;
+    }
+    
+    .share-buttons .icon-btn:hover {
+        background-color: #fde7cf;
+    }
+</style>
+
+</html>

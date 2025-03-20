@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- <link rel="stylesheet" href="/bathhouse.css"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- fontawesone link -->
+    <script src="https://kit.fontawesome.com/467b90b200.js" crossorigin="anonymous"></script>
+    <!-- font link -->
+    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet" type="text/css">
+    <title>Bathhouse</title>
+</head>
+
+<body>
+    <!-- header section start -->
+    <header>
+        <a href="/index.php" class="logo"><span>DREAM COME TRUE</span></a>
+        <a href="/menu.html" class="fas fa-bars"></a>
+
+    </header>
+    <!-- header section end -->
+    <section class="qwer">
+
+        <h2 class="heading">БАНЯ</h2>
+
+
+        <section class="content5">
+            <div class="image-text">
+                <img src="img/image 37.png" alt="Bathhouse exterior">
+                <p>Паровая баня дает действительно значимый результат для здоровья, очищая организм и положительно влияя на настроение. На человека, прошедшего через горячую паровую баню и прохладный бассейн, снисходит ни с чем не сравнимое чувство свежести,
+                    легкости и умиротворения.</p>
+            </div>
+            <div class="image-text">
+                <p>В наши дни баня — это не только центр здоровья и отдыха, но и неотъемлемая часть и символ здорового образа жизни для всех тех, кто давно полюбил наши бани за их прекрасные парилки, бассейн и вежливый, гостеприимный персонал.</p>
+                <img src="img/image 38.png" alt="Steam room">
+
+            </div>
+            <div class="image-text">
+                <img src="img/image 39.png" alt="Modern sauna">
+                <p>В нашей сауне вы можете не только расслабиться в парной, но и позаниматься в современном тренажерном зале. Мы предлагаем широкий выбор тренажеров для кардио- и силовых тренировок, а также профессиональных тренеров, готовых помочь вам достичь
+                    ваших фитнес-целей. После интенсивной тренировки вы можете восстановить силы и расслабиться в нашей уютной парной или бассейне.</p>
+
+
+            </div>
+        </section>
+        <section class="pricing">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Название услуги</th>
+                        <th>Длительность сеанса</th>
+                        <th>Стоимость</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Посещение бани «Моцный пар» (до 7 человек)</td>
+                        <td>180 мин</td>
+                        <td>240.00 BYN</td>
+                    </tr>
+                    <tr>
+                        <td>Посещение бани «Моцный пар» (до 7 человек) - для гостей, проживающих</td>
+                        <td>180 мин</td>
+                        <td>190.00 BYN</td>
+                    </tr>
+                    <tr>
+                        <td>1 дополнительный час</td>
+                        <td>60 мин</td>
+                        <td>80.00 BYN</td>
+                    </tr>
+                    <tr>
+                        <td>1 дополнительное место</td>
+                        <td>180 мин</td>
+                        <td>35.00 BYN</td>
+                    </tr>
+                </tbody>
+            </table>
+            <button onclick="location.href='bathhouse.php'">Забронировать баню</button>
+        </section>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="brand">
+                <h2>DREAM COME TRUE</h2>
+                <p>АРЕНДА КРАСИВЫХ ДОМОВ НА ОЗЕРЕ</p>
+            </div>
+            <div class="contacts">
+                <p><strong>КОНТАКТЫ</strong></p>
+                <p>Минская область, Воложенский район, село Васильевское,<br> территория "Dream come true"</p>
+                <p>+375 (29) 123-53-53</p>
+                <p>hello@dream_come_true.ru</p>
+                <div class="social-icons">
+                    <button class="icon-btn"><i class="fab fa-youtube"></i></button>
+                    <button class="icon-btn"><i class="fab fa-telegram"></i></button>
+                    <button class="icon-btn"><i class="fab fa-whatsapp"></i></button>
+                </div>
+            </div>
+            <div class="links">
+                <a href="#">Публичная оферта</a>
+                <a href="#">Политика конфиденциальности</a>
+                <a href="#">Условия бронирования, оплаты и аннулирования</a>
+                <a href="#">Пользовательское соглашение</a>
+                <a href="#">Правила пожарной безопасности</a>
+                <a href="#">Правила проживания</a>
+            </div>
+        </div>
+    </footer>
+
+
+</body>
+<style>
+    * {
+        font-family: Nunito, sans-serif;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        text-decoration: none;
+        list-style: none;
+        line-height: 1.5;
+        transition: all .7s;
+    }
+    
+     :root {
+        --orange: #FFDAB2;
+    }
+    
+    *::selection {
+        background-color: var(--orange);
+        color: #fff;
+    }
+    
+    .heading {
+        font-size: 4rem;
+        color: #FFDAB2;
+        text-align: center;
+        padding: 1rem;
+        padding-top: 3rem;
+        font-weight: 100;
+    }
+    
+    html {
+        font-size: 62.5%;
+        overflow-x: hidden;
+    }
+    
+    header {
+        /* width: 100%; */
+        background-color: #3D3D3D;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 8%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 1000;
+        box-shadow: 0 .1rem .3rem rgb(0, 0, 0, .3);
+    }
+    
+    header .logo {
+        font-size: 2rem;
+        color: #FFDAB2;
+    }
+    
+    header .fa-bars {
+        font-size: 3rem;
+        color: #FBF0E4;
+        cursor: pointer;
+        display: none;
+    }
+    
+    .qwer {
+        background-color: #1E1E1E;
+        padding-top: 20px;
+    }
+    
+    .content5 {
+        margin-bottom: 40px;
+    }
+    
+    .content5 .image-text {
+        display: flex;
+        align-items: center;
+        gap: 8%;
+        padding: 15px;
+        /* border-radius: 8px; */
+    }
+    
+    .content5 .image-text img {
+        width: 45%;
+        border-radius: 8px;
+    }
+    
+    .content5 .image-text p {
+        font-size: 18px;
+        line-height: 1.6;
+        color: #FBF0E4;
+        flex: 1;
+        text-align: justify;
+    }
+    
+    @media (max-width: 768px) {
+        .content5 .image-text {
+            flex-direction: column;
+            text-align: center;
+        }
+    }
+    
+    .pricing {
+        padding: 20px;
+        border-radius: 8px;
+    }
+    
+    table {
+        width: 60%;
+        border-collapse: collapse;
+        margin-bottom: 20px;
+    }
+    
+    table th,
+    table td {
+        border: 1px solid #FFDAB2;
+        padding: 10px;
+        text-align: right;
+        color: #FBF0E4;
+        font-size: 15px;
+    }
+    
+    table th {
+        background-color: #333;
+    }
+    
+    .pricing button {
+        display: block;
+        width: 100%;
+        padding: 10px;
+        background-color: #444;
+        color: #fff;
+        border: none;
+        border-radius: 8px;
+        font-size: 16px;
+        cursor: pointer;
+    }
+    
+    button:hover {
+        background-color: #555;
+    }
+    /* footer */
+    
+    footer {
+        background-color: #3D3D3D;
+        padding: 20px 0;
+    }
+    
+    .footer-content {
+        max-width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        color: #FBF0E4;
+    }
+    
+    .brand,
+    .contacts {
+        margin: 20px;
+        text-align: left;
+    }
+    
+    .links {
+        margin: 10px;
+        text-align: right;
+    }
+    
+    .brand h2 {
+        color: #FFDAB2;
+        font-size: 20px;
+        margin-bottom: 5px;
+        font-weight: 100;
+    }
+    
+    .brand p {
+        font-size: 10px;
+    }
+    
+    .contacts p strong {
+        color: #FFDAB2;
+        font-weight: 100;
+    }
+    
+    .contacts p,
+    .links a {
+        font-size: 14px;
+        color: #FBF0E4;
+        text-decoration: none;
+    }
+    
+    .social-icons .icon-btn {
+        background-color: #FFDAB2;
+        width: 30px;
+        height: 30px;
+        margin: 0 5px;
+        border: none;
+        border-radius: 60%;
+    }
+    
+    .links a {
+        display: block;
+        margin: 5px 0;
+        color: #FBF0E4;
+    }
+    
+    .links a:hover {
+        color: #ffffff;
+    }
+    /* media queries */
+    
+    @media (max-width: 50000px) {
+        html {
+            font-size: 55%;
+        }
+        header .fa-bars {
+            display: block;
+        }
+    }
+</style>
+
+</html>

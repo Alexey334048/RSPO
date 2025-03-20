@@ -1,0 +1,180 @@
+* {
+    font-family: Nunito, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    line-height: 1.5;
+    transition: all .7s;
+    width: auto;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #1E1E1E;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+header {
+    width: 100%;
+    background-color: #3D3D3D;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 8%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    box-shadow: 0 .1rem .3rem rgb(0, 0, 0, .3);
+}
+
+header .logo {
+    font-size: 2rem;
+    color: #FFDAB2;
+}
+
+header .fa-bars {
+    font-size: 3rem;
+    color: #FBF0E4;
+    cursor: pointer;
+    display: none;
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 3rem;
+    color: #FFDAB2;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    font-weight: 100;
+}
+
+p {
+    font-size: 2rem;
+    color: #FBF0E4;
+    line-height: 1.6;
+}
+
+.images {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.images img {
+    width: 800px;
+    height: 350px;
+    border-radius: 5px;
+}
+
+.button {
+    margin-top: 30px;
+}
+
+.order-button {
+    background-color: #3D3D3D;
+    color: #FFDAB2;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 700px;
+    height: 50px;
+    transition: background-color 0.3s ease;
+}
+
+.order-button:hover {
+    background-color: #FBF0E4;
+}
+
+
+/* footer */
+
+footer {
+    background-color: #3D3D3D;
+    padding: 20px 0;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    color: #FBF0E4;
+}
+
+.brand,
+.contacts {
+    margin: 20px;
+    text-align: left;
+}
+
+.links {
+    margin: 10px;
+    text-align: right;
+}
+
+.brand h2 {
+    color: #FFDAB2;
+    font-size: 20px;
+    margin-bottom: 5px;
+    font-weight: 100;
+}
+
+.brand p {
+    font-size: 10px;
+}
+
+.contacts p strong {
+    color: #FFDAB2;
+    font-weight: 100;
+}
+
+.contacts p,
+.links a {
+    font-size: 14px;
+    color: #FBF0E4;
+    text-decoration: none;
+}
+
+.social-icons .icon-btn {
+    background-color: #FFDAB2;
+    width: 30px;
+    height: 30px;
+    margin: 0 5px;
+    border: none;
+    border-radius: 60%;
+}
+
+.links a {
+    display: block;
+    margin: 5px 0;
+    color: #FBF0E4;
+}
+
+.links a:hover {
+    color: #ffffff;
+}
+
+@media (max-width: 50000px) {
+    html {
+        font-size: 55%;
+    }
+    header .fa-bars {
+        display: block;
+    }
+}

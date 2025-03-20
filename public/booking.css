@@ -1,0 +1,204 @@
+* {
+    font-family: Nunito, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    line-height: 1.5;
+    transition: all .7s;
+}
+
+:root {
+    --orange: #FFDAB2;
+}
+
+*::selection {
+    background-color: var(--orange);
+    color: #fff;
+}
+
+.heading {
+    font-size: 4rem;
+    color: #FFDAB2;
+    text-align: center;
+    padding: 1rem;
+    padding-top: 3rem;
+    font-weight: 100;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+header {
+    /* width: 100%; */
+    background-color: #3D3D3D;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 8%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    box-shadow: 0 .1rem .3rem rgb(0, 0, 0, .3);
+}
+
+header .logo {
+    font-size: 2rem;
+    color: #FFDAB2;
+}
+
+header .fa-bars {
+    font-size: 3rem;
+    color: #FBF0E4;
+    cursor: pointer;
+    display: none;
+}
+
+
+/* /////////////////////////////////// */
+
+.back {
+    background-color: #1E1E1E;
+}
+
+.search-bar {
+    display: flex;
+    gap: 10px;
+}
+
+.search-bar input,
+.search-bar button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.search-bar input {
+    background-color: #d3b8a5;
+    color: #1e1e1e;
+}
+
+.search-bar button {
+    background-color: #FFDAB2;
+    color: #fff;
+    cursor: pointer;
+}
+
+.book {
+    margin-top: 20px;
+    display: flex;
+    gap: 20px;
+}
+
+.booking-details {
+    flex: 2;
+    background-color: #d3b8a5;
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 14px;
+}
+
+.dates {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.room-info {
+    margin-bottom: 20px;
+}
+
+.options {
+    display: flex;
+    gap: 20px;
+}
+
+.price-summary {
+    margin-bottom: 20px;
+}
+
+.policy {
+    font-size: 10px;
+}
+
+aside {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.rules,
+.customer-form {
+    background-color: #d3b8a5;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.customer-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.customer-form input,
+.customer-form button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.customer-form button {
+    background-color: #444;
+    color: #fff;
+    cursor: pointer;
+}
+
+.agreement {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.checkin-label {
+    font-size: 15px;
+    color: #FBF0E4;
+}
+
+.book-button {
+    background-color: #D8BFAA;
+    border: none;
+    border-radius: 10px;
+    /* закругленные края */
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.book-button:hover {
+    background-color: #C9AD9F;
+    /* цвет при наведении курсора */
+}
+
+
+/* media queries */
+
+@media (max-width: 50000px) {
+    html {
+        font-size: 55%;
+    }
+    header .fa-bars {
+        display: block;
+    }
+}

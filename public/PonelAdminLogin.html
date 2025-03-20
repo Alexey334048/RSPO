@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Авторизация</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #1a1a1a;
+            font-family: Arial, sans-serif;
+        }
+        
+        .login-container {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            text-align: center;
+        }
+        
+        .login-container h2 {
+            margin-bottom: 20px;
+        }
+        
+        .login-container input {
+            width: 90%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        
+        .login-container button {
+            width: 100%;
+            padding: 10px;
+            background: #3D3D3D;
+            color: #FFDAB2;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        
+        .login-container button:hover {
+            background: #777777;
+        }
+    </style>
+    <script>
+        function checkLogin() {
+            const username = document.getElementById('username').value;
+            const password = document.getElementById('password').value;
+
+            const correctUsername = 'Admin2025';
+            const correctPassword = 'AdminAlex';
+
+            if (username === correctUsername && password === correctPassword) {
+                window.location.href = 'PonelAdmin.php';
+            } else {
+                alert('Неверный логин или пароль');
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <div class="login-container">
+        <h2>Вход для Администратора</h2>
+        <input type="text" id="username" placeholder="Логин" required>
+        <input type="password" id="password" placeholder="Пароль" required>
+        <button onclick="checkLogin()">Войти</button>
+    </div>
+</body>
+
+</html>

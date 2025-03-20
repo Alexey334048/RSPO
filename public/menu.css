@@ -1,0 +1,52 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: url('/img/Forest2.jpg') no-repeat center center fixed;
+    background-size: cover;
+    font-family: Nunito, sans-serif;
+}
+
+.menu {
+    background-color: #FBF0E4;
+    margin: 100px auto;
+    padding: 20px;
+    text-align: center;
+    width: 300px;
+    border-radius: 10px;
+}
+
+.menu h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.menu ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.menu ul li {
+    margin: 20px 0;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    font-size: 18px;
+    color: #1E1E1E;
+}
+
+.menu ul li a:hover {
+    color: #FFDAB2;
+}
+
+body ul {
+    list-style-type: none;
+    /* padding: 20px; */
+}
+
+body ul li a {
+    text-decoration: none;
+    color: #FBF0E4;
+    list-style-type: none;
+    font-size: 20px;
+}
